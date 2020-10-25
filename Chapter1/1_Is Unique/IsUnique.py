@@ -8,8 +8,8 @@ def unique(string):
         return False
 
     char_set = [False for _ in range(128)]
-    for char in string:
-        val = ord(char)
+    for char in string:  
+        val = ord(char) #ord() is inbuilt function which will returned integer represents the Unicode code point.
         if char_set[val]:
             # Char already found in string
             return False
